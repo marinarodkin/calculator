@@ -12,3 +12,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/*
+app variables
+*/
+
+/*
+app variables
+*/
+
+:root {
+  /* background colors */
+  --action-key-color: #e6e6e6;
+  --action-key-color-hover: #cccccc;
+  --calculator-background-color: #6b6b6b;
+  --display-background-color: #ffffff;
+  --number-key-color: #ffffff;
+  --number-key-color-hover:  #e6e6e6;
+  --submit-key-color: #e6e6e6;
+  --submit-key-color-hover: #cccccc;
+  --border-color: #808080;
+
+  /* font */
+  --main-font: "Roboto", sans-serif;
+
+  /* font colors */
+  --display-text-color: #3a403c;
+  --key-text-color: #3a403c;
+
+  /* font sizes */
+  --display-text-size: 3.7em;
+  --key-text-size: 2.7em;
+
+  /* font weights */
+  --display-text-weight: 400;
+  --key-text-weight: 700;
+
+  /* calculator dimensions */
+  --calculator-height: 72%;
+  --calculator-width: 36%;
+
+  /* display dimensions */
+  --display-height: 24%;
+  --display-width: 94%;
+
+  /* keypad dimensions */
+  --keypad-height: 74%;
+  --keypad-width: 100%;
+}
+
+/*
+media query for tablet or smaller screen
+*/
+
+@media screen and (max-width: 1024px) {
+  :root {
+    /* font sizes */
+    --display-text-size: 10em;
+    --key-text-size: 4.5em;
+
+    /* calculator dimensions */
+    --calculator-height: 90%;
+    --calculator-width: 90%;
+  }
+}
+
+/*
+app CSS reset
+*/
+
+body, div, p {
+  margin: 0;
+  padding: 0;
+}
